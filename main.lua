@@ -32,7 +32,7 @@ setupAntiAFK()
 -- Create Main Window
 local window = library:AddWindow(" CLAN AXH | exclusive hub", {
     main_color = Color3.fromRGB(0, 170, 255),
-    min_size = Vector2.new(550, 600),
+    min_size = Vector2.new(450, 600),
     can_resize = true,
 })
 
@@ -224,7 +224,7 @@ function gettool()
 end
 
 -- Add all rock farming toggles to the Auto Rock folder
-autoRockFolder:AddSwitch("0  DURABILIDAD Rocka", function(Value)
+autoRockFolder:AddSwitch("tiny Roca", function(Value)
     selectrock = "Tiny Island Rock"
     getgenv().autoFarm = Value
     
@@ -248,7 +248,7 @@ autoRockFolder:AddSwitch("0  DURABILIDAD Rocka", function(Value)
     end)
 end)
 
-autoRockFolder:AddSwitch("started Rock", function(Value)
+autoRockFolder:AddSwitch("started Roca", function(Value)
     selectrock = "Starter Island Rock"
     getgenv().autoFarm = Value
     
